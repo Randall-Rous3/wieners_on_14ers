@@ -1,0 +1,189 @@
+@font-face {
+  font-family: 'Fuzzy Bubbles', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Montserrat+Alternates:wght@100&family=Permanent+Marker&family=Rock+3D&family=Rock+Salt&family=Warnes&display=swap');
+}
+.App {
+
+  text-align: center;
+  display: grid;
+  gap: 1rem;
+}
+header{
+  position: inherit;
+  display: grid;
+  grid-template-areas:
+  'headerL headerC headerR'
+  'midL midC midR '
+  'footer footer footer';
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages_k%2Fmountain-transparent%2Fmountain-transparent-13.png&f=1&nofb=1https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages_k%2Fmountain-transparent%2Fmountain-transparent-13.png&f=1&nofb=1');
+  background-size: 100% auto;
+  background-position: center;
+  grid-gap: 10px;
+}
+nav{
+  grid-area: midC;
+  border-radius: 5px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  font-size: 2vw;
+  font-weight: bold;
+  font-family:'Rock 3D', cursive;
+}
+
+ .nav   {
+  margin: 0 1em;
+  color: rgb(3, 20, 36); 
+  text-decoration: none;
+}
+.nav:hover{
+  transform: scale(1.2);
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F153-1538769_cardboard-blank-cardboard-sign-png.png&f=1&nofb=1');
+  background-size: 100em cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100em;
+  max-height: 100em;
+
+}
+
+form {
+  position: relative;
+  background-color:rgba(0, 4, 8, 0.1) ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: auto;
+  min-height: auto;
+  border-radius: 0.3em;
+}
+input{
+  border-radius: .3em;
+}
+select{
+  border-radius: .3em;
+
+}
+
+h1{
+  text-align:center;
+  font-family:'Rock Salt', cursive;
+
+}
+h3{
+  font-size: 2vh;
+  text-align:center;
+  font-family:'Rock Salt', cursive;
+  color: rgb(10, 10, 10);
+}
+.boardText{
+  text-align:center;
+  font-family:'Permanent Marker', cursive;
+  font-size: 3vh;
+  color: rgb(41, 39, 39);
+  max-width: 28em;
+}
+
+.dog-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 25em;
+  max-width: auto;
+}
+.mountain-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 25vh;
+  max-width: auto;
+}
+
+.dog-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 1rem;
+ 
+
+}
+.mountain-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
+}
+.details{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: space-between;
+  gap: 5em;
+}
+.mountPic{
+  min-height: 25em;
+  max-height: 25em;
+  align-self: center;
+  width: auto;
+  border-radius: 1em;
+  
+}
+.img:hover{
+  border: solid black .3em;
+}
+
+.img{
+  height:30vmin ;
+  width: auto;
+  border-radius: 1vmin;
+}
+.dogImg{
+  height:30vmin ;
+  width: auto;
+  border-radius: 1vmin;
+}
+
+.input {
+  color:rgb(128, 169, 247) ;
+  width: 15vw;
+  height: auto;
+}
+
+.logo{
+  height: 20em;
+  width: auto;
+  
+  
+  }
+#name{
+  grid-area: headerC;
+  text-align: center;
+  font-size: 7vmin;
+  font-family:  'Rock 3D', cursive;
+  color: rgb(3, 20, 36);
+}
+
+.delete{
+ 
+  border-radius: 1vmin;
+}
+.delete:hover{
+  border: solid red .3em;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

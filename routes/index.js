@@ -2,7 +2,7 @@ const { Router } = require("express")
 const router = Router()
 const controllers = require("../controllers/index")
 
-router.get("/api", (req, res) => res.send("This is root!"))
+
 
 router.get('/mountains',controllers.getAllMountains)
 router.post('/mountains', controllers.createMountain)

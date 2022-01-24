@@ -3,6 +3,7 @@ import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 import MountainDogs from './Mountain_Dogs';
 import DogCard from '../components/DogCard';
+import { BASE_URL } from '../globals/index';
 
 
 export default function AddDog(props) {
@@ -23,7 +24,7 @@ export default function AddDog(props) {
     };
     console.log(createdDog);
     axios
-      .post('http://localhost:3001/api/dogs', createdDog)
+      .post(`${BASE_URL}/dogs`, createdDog)
       .then((response) => setReturnId(response.data))
     setNewDog({
       name: '',
@@ -35,7 +36,7 @@ export default function AddDog(props) {
     });
 }
 const getMountainDogs = async () => {
-  const response = await axios.get('http://localhost:3001/api/dogs');
+  const response = await axios.get(`http://${BASE_URL}/dogs`);
   setMountDogs(response.data.dogs);
  
 };

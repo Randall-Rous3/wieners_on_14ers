@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import MountainCard from '../components/MountainCard';
 import MountainDetails from './mountainDetails';
+import { BASE_URL } from '../globals/index';
 
 
 
@@ -21,7 +22,7 @@ const Mountains = (props) => {
 
 
   const getMountains = async () => {
-    const response = await axios.get('http://localhost:3001/api/mountains');
+    const response = await axios.get(`http://${BASE_URL}/mountains`);
     setMountains(response.data.mountains);
   };
   mountains.sort((a, b) => a.name.localeCompare(b.name))

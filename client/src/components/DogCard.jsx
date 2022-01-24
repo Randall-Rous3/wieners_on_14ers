@@ -1,6 +1,7 @@
 import React, { useState, useEffect, createElement } from 'react';
 import axios from 'axios';
 import MountainDogs from '../pages/Mountain_Dogs';
+import { BASE_URL } from '../globals/index';
 
 
 
@@ -12,7 +13,7 @@ const DogCard = (props) => {
 
   const deleteDog = (e) =>{
     axios
-      .delete(`http://localhost:3001/api/dogs/${props.id}`, )
+      .delete(`${BASE_URL}/dogs/${props.id}`, )
       .then (props.render)
 }
 

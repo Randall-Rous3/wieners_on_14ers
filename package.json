@@ -15,7 +15,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "cd client && rm -rf build && npm install && npm run build"
   },
   "name": "wieners-on-14-ers",
   "description": "## Objectives Creating a app that allows people to add pictures of their best friend (dog) on their favorite hikes (14ers). The app will allow visitors to view pictures of dogs on all of CO. mountains over 14,000 ft. The visitor will be able to navigate to a specicic mountain and view all of the dogs on that peak or stay on the home page and generate a random dog on a random summit.",

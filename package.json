@@ -5,6 +5,7 @@
     "body-parser": "^1.19.1",
     "cool-ascii-faces": "^1.3.4",
     "cors": "^2.8.5",
+    "dotenv": "^14.3.2",
     "express": "^4.17.1",
     "mongoose": "^6.1.2",
     "morgan": "^1.10.0",
@@ -34,5 +35,3 @@
   },
   "homepage": "https://github.com/Randall-Rous3/Wieners-on-14-ers#readme"
 }
-
-

@@ -1,4 +1,4 @@
-/node_modules
+node_modules
 ./theme_park/node_modules
 ./server/node_modules
 ./server_bak/node_modules

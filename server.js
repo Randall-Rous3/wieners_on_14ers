@@ -28,15 +28,4 @@ app.listen(PORT, () => console.log(`Server Listening on port: ${PORT}`))
 
 // app.use() middleware here ^ ///////////////////
 
-app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
-    res.header(
-      "Access-Control-Allow-Headers",
-      "Origin"
-    );
-    next();
-  });
 
-// app.get('/api', function (req, res, next) {
-//   res.send('USER')
-// }) 

@@ -22,7 +22,7 @@ const Mountains = (props) => {
 
 
   const getMountains = async () => {
-    const response = await axios.get(`http://${BASE_URL}/mountains`);
+    const response = await axios.get(`${BASE_URL}/mountains`);
     setMountains(response.data.mountains);
   };
   mountains.sort((a, b) => a.name.localeCompare(b.name))

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import DogCard from '../components/DogCard';
-import AddDog from './Add_dog';
 import { BASE_URL } from '../globals/index';
 
 
@@ -17,7 +16,7 @@ const MountainDogs = (props) => {
 
 
   const getMountainDogs = async () => {
-    const response = await axios.get(`http://${BASE_URL}/dogs`);
+    const response = await axios.get(`${BASE_URL}/dogs`);
     setMountDogs(response.data.dogs);
    
   };

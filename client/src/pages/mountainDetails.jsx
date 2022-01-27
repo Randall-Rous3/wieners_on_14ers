@@ -28,7 +28,7 @@ const MountainDetails = (props) => {
       ...updatedMount
     };
     axios
-      .put(`http://${BASE_URL}/mountains/update/${props.match.params.mountainId}`, newMount)
+      .put(`${BASE_URL}/mountains/update/${props.match.params.mountainId}`, newMount)
       .then((response) => setReturnId(response.data))
         setUpdatedMount({
          description:''
@@ -46,7 +46,7 @@ const handleSubmit = (e) => {
 };
 
 const getDetails = async (mountain) => {
-    const response = await axios.get(`http://${BASE_URL}/mountains/${props.match.params.mountainId}`);
+    const response = await axios.get(`${BASE_URL}/mountains/${props.match.params.mountainId}`);
         setMountainDetails(response.data.mountain);
   };
 

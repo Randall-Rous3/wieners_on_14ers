@@ -36,7 +36,7 @@ export default function AddDog(props) {
     });
 }
 const getMountainDogs = async () => {
-  const response = await axios.get(`http://${BASE_URL}/dogs`);
+  const response = await axios.get(`${BASE_URL}/dogs`);
   setMountDogs(response.data.dogs);
  
 };

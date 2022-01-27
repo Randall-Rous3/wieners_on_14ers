@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home'
 import Mountain from './pages/Mountain'
-import AddDog from './pages/Add_dog'
+import AddDog from './pages/Add_Dog'
 import MountainCard from './components/MountainCard';
 import MountainDogs from './pages/Mountain_Dogs'
 import DogCard from './components/DogCard';
